@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Logo</a>
+        <a href="#" class="logo">Home</a>
         <div class="mean-toggle"></div>
         <nav>
             <ul>

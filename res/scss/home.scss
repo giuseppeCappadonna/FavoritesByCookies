@@ -16,7 +16,7 @@ header{
         line-height: 60px;
         font-size: 36px;
         padding: 0 20px;
-        color:var.$pastel-green;
+        color:var.$pastel-red;
         font-weight: 700;
         text-decoration: none;
     }
@@ -36,7 +36,7 @@ header{
                     
                     &.active,
                     &:hover{
-                        background: var.$pastel-green;
+                        background: var.$gray-60;
                         color: #fff;
                         transition: 0.5s;
                     }
@@ -58,7 +58,8 @@ header{
         flex-direction: row;
         flex-wrap: nowrap;
         gap:30px;
-        align-items: stretch;
+        align-items: flex-start;
+        justify-content: center;
         .card{
             flex-basis: auto;
             position:relative;
