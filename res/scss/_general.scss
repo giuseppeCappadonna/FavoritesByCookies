@@ -1,0 +1,105 @@
+@use 'var';
+
+//general
+* {
+    font-family: var.$primary_font;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 1rem;
+    overflow-x: hidden;
+    min-height: 200vh;
+    color: var.$dark;
+    background-color: var.$light;
+    margin:0;
+}
+
+.max-w{
+    max-width: var.$max-w;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scrol_margin_block{
+    scroll-margin-block-start: unset;//set by js
+}
+
+.pdg{
+    padding-right: var.$pdg!important;
+    padding-left: var.$pdg!important;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.remove{
+    display: none!important;
+}
+
+.no-select{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    -moz-user-select: none;
+         user-select: none; /* Standard syntax */  
+}
+
+
+ul.simple{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap:8px;
+}
+
+a{
+    color:var.$dark;
+    &:hover{
+        color: var.$light-blue;
+    }
+    &:active{
+        color: var.$dark;
+    }
+    &:visited{
+        color:var.$dark;
+    }
+}
+
+.title-l{
+    font-size: 2rem;
+}
+.title-m{
+    font-size: 1.5rem;
+}
+.title-s{
+    font-size: 1.3rem;
+}
+.text-m{
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+}
+.text-s{
+    font-size: 1rem;
+    line-height: 1.25rem;
+}

@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1rem;
+  overflow-x: hidden;
+  min-height: 200vh;
+  color: #01010d;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.max-w {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrol_margin_block {
+  scroll-margin-block-start: unset;
+}
+
+.pdg {
+  padding-right: 32px !important;
+  padding-left: 32px !important;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.remove {
+  display: none !important;
+}
+
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  -moz-user-select: none;
+  user-select: none; /* Standard syntax */
+}
+
+ul.simple {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 8px;
+}
+
+a {
+  color: #01010d;
+}
+a:hover {
+  color: #E5EAFF;
+}
+a:active {
+  color: #01010d;
+}
+a:visited {
+  color: #01010d;
+}
+
+.title-l {
+  font-size: 2rem;
+}
+
+.title-m {
+  font-size: 1.5rem;
+}
+
+.title-s {
+  font-size: 1.3rem;
+}
+
+.text-m {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+
+.text-s {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+header {
+  position: relative;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+header .logo {
+  float: left;
+  text-align: center;
+  line-height: 60px;
+  font-size: 36px;
+  padding: 0 20px;
+  color: #00bb77;
+  font-weight: 700;
+  text-decoration: none;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+header nav ul li a.active, header nav ul li a:hover {
+  background: #00bb77;
+  color: #fff;
+  transition: 0.5s;
+}
+header .clear {
+  clear: both;
+}
+
+#items {
+  margin-top: 120px;
+}
+#items .flex-cont {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  align-items: stretch;
+}
+#items .flex-cont .card {
+  flex-basis: auto;
+  position: relative;
+  width: 360px;
+  height: auto;
+  background: #191919;
+  border-radius: 20px;
+  overflow: hidden;
+}
+#items .flex-cont .card.added .container .favor {
+  background: #d20a2e;
+  color: #fff;
+}
+#items .flex-cont .card .phone {
+  height: 350px;
+  width: auto;
+}
+#items .flex-cont .card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(207, 214, 230), rgb(231, 239, 249));
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+#items .flex-cont .card:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+#items .flex-cont .card::after {
+  content: "Aco Web Solution";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 4em;
+  color: rgba(0, 0, 0, 0.1);
+}
+#items .flex-cont .card .img-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+#items .flex-cont .card .container {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+#items .flex-cont .card .container h1 {
+  font-size: 18px;
+  color: #f5f5f5;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#items .flex-cont .card .container .price {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#items .flex-cont .card .container .favor {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: linear-gradient(rgb(207, 214, 230), rgb(231, 239, 249));
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=home.css.map */
