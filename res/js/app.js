@@ -6,8 +6,6 @@ let pageId = document.body.getAttribute("data-pageId");
 let ENV_D = 30; //durata cookie
 
 document.addEventListener('DOMContentLoaded', function() {
-    //deleteFavorites();
-
     updatesGuiFav(); 
 });
 
@@ -104,6 +102,7 @@ function getCookieFavorites() {
             let favorites = JSON.parse(decodeURIComponent(cookies.split('=')[1]));
             return Array.isArray(favorites) ? favorites : [];
         } catch (e) {
+            console.error("Errore nel parsing del cookie favorites", e);
             return [];
         }
     }
