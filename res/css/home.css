@@ -44,6 +44,14 @@ body {
   visibility: hidden;
 }
 
+.deleteCookie {
+  cursor: pointer;
+  font-weight: bold;
+}
+.deleteCookie:hover {
+  color: #d20a2e !important;
+}
+
 .remove {
   display: none !important;
 }
@@ -170,7 +178,7 @@ header .clear {
   border-radius: 20px;
   overflow: hidden;
 }
-#items .flex-cont .card.added .container .favor {
+#items .flex-cont .card.added .container .favorite-btn {
   background: #d20a2e;
   color: #fff;
 }
@@ -232,7 +240,7 @@ header .clear {
   font-weight: 700;
   letter-spacing: 1px;
 }
-#items .flex-cont .card .container .favor {
+#items .flex-cont .card .container .favorite-btn {
   position: relative;
   top: 0;
   opacity: 1;
@@ -245,6 +253,9 @@ header .clear {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.5s;
+}
+#items .flex-cont .card .container .favorite-btn:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -70,7 +70,7 @@ header{
             overflow:hidden;
 
             &.added{
-                .container .favor{
+                .container .favorite-btn{
                     background: var.$pastel-red;
                     color:#fff;
                 }
@@ -135,7 +135,7 @@ header{
                     letter-spacing:1px;
                 }
 
-                .favor{
+                .favorite-btn{
                     position:relative;
                     top:0;
                     opacity: 1;
@@ -148,6 +148,9 @@ header{
                     text-transform:uppercase;
                     letter-spacing:1px;
                     transition:0.5s;
+                    &:hover{
+                        opacity: 0.7;
+                    }
                 }
 
                 

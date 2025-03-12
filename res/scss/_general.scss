@@ -47,6 +47,14 @@ body {
     visibility: hidden;
 }
 
+.deleteCookie{
+    cursor: pointer; font-weight: bold;
+    &:hover{
+        color: var.$pastel-red!important;
+        
+    }
+}
+
 .remove{
     display: none!important;
 }
