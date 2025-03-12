@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Preferiti</a>
+        <a href="index.php" class="logo">Preferiti</a>
         <div class="mean-toggle"></div>
         <nav>
             <ul>
@@ -23,15 +23,11 @@
     <?php 
         function getCookieFavorites() {
             if(isset($_COOKIE['favorites'])) {
-                // Decodifica il cookie JSON in un array
                 $favorites = json_decode($_COOKIE['favorites'], true);
-                
-                // Verifica se la decodifica è avvenuta correttamente e se è un array
                 if(is_array($favorites)) {
                     return $favorites;
                 }
             }
-            // Se il cookie non esiste o non è valido, restituisce un array vuoto
             return [];
         }
     ?>
@@ -44,7 +40,7 @@
                 foreach ($favoritesArray as $codFav) {
                     echo '<div class="card" data-id="'.$codFav.'">';
                     echo '<div class="img-container">
-                                <img class="phone"  src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
+                                <img class="phone" src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
                             </div>';
                     echo    '<div class="container">';
                     echo        '<h1>'.$codFav.' - Lorem ipsum</h1>';
@@ -53,14 +49,15 @@
                     echo    '</div>';
                     echo '</div>';
                 }
-            }else{
+            } else {
                 echo '<h5>Nessun Preferito</h5>';
             }
         ?>
         </div>
     </section>
-
-    
+    <footer>
+        <p>&copy; 2025 <a href="https://github.com/giuseppeCappadonna">GH: @giuseppeCappadonna</a>. Tutti i diritti riservati.</p>
+    </footer>
 </body>
-    <script src="res/js/app.js"></script>
+<script src="/res/js/app.js"></script>
 </html>

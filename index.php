@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodotti</title>
+    <title>Pagina Prodotti</title>
     <link rel="stylesheet" href="/res/css/home.css">
 </head>
 <body data-pageId="home">
     <header class="no-select">
-        <a href="" class="logo">Home</a>
+        <a href="index.php" class="logo">Home</a>
         <div class="mean-toggle"></div>
         <nav>
             <ul>
@@ -24,7 +24,7 @@
         <div class="flex-cont">
             <div class="card" data-id="001">
                 <div class="img-container">
-                    <img class="phone"  src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
+                    <img class="phone" src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
                 </div>
                 <div class="container">
                     <h1>001 - Lorem ipsum</h1>
@@ -35,7 +35,7 @@
 
             <div class="card" data-id="002">
                 <div class="img-container">
-                    <img class="phone"  src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
+                    <img class="phone" src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
                 </div>
                 <div class="container">
                     <h1>002 - Lorem ipsum</h1>
@@ -46,7 +46,7 @@
 
             <div class="card" data-id="003">
                 <div class="img-container">
-                    <img class="phone"  src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
+                    <img class="phone" src="https://ariskost.github.io/images-for-test-projects/galaxy-s23-ultra.png" alt="Samsung Galaxy S23 Ultra">
                 </div>
                 <div class="container">
                     <h1>003 - Lorem ipsum</h1>
@@ -56,8 +56,9 @@
             </div>
         </div>
     </section>
-
-    
+    <footer>
+        <p>&copy; 2025 <a href="https://github.com/giuseppeCappadonna">GH: @giuseppeCappadonna</a>. Tutti i diritti riservati.</p>
+    </footer>
 </body>
     <script src="res/js/app.js"></script>
 </html>

@@ -19,7 +19,7 @@ body {
   box-sizing: border-box;
   font-size: 1rem;
   overflow-x: hidden;
-  min-height: 200vh;
+  min-height: 100vh;
   color: #01010d;
   background-color: #f5f5f5;
   margin: 0;
@@ -158,6 +158,7 @@ header .clear {
 }
 
 #items {
+  flex: 1;
   margin-top: 120px;
 }
 #items .flex-cont {
@@ -256,6 +257,26 @@ header .clear {
 }
 #items .flex-cont .card .container .favorite-btn:hover {
   opacity: 0.7;
+}
+
+footer {
+  margin-top: 150px;
+  height: 10vh;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+}
+footer p {
+  margin: 0;
+  color: #6c757d;
+}
+footer p a {
+  color: #007bff;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=home.css.map */
